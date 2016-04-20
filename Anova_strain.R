@@ -1,9 +1,10 @@
 ##2015 June 17
 ##Make variables for log cell counts of individual strains, individual times, for mixed sym treatment
+##WHAT IS HAPPENING?
 
 ANOVA_strain<-function(qPCR_all)
 
-qPCR_all=read.table(file.choose(),header=T,sep="\t")
+qPCR_all=read.table(file.choose(),header=T,sep="\t") 
 qPCR_all$Rep=as.factor(qPCR_all$Rep)
 qPCR_T1=subset(qPCR_all,qPCR_all$Time==1)
 qPCR_T2=subset(qPCR_all,qPCR_all$Time==2)
